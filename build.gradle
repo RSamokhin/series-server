@@ -27,5 +27,12 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile "com.jsoniter:jsoniter:0.9.19"
     testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
 }
